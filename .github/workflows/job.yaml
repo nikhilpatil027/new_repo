@@ -9,12 +9,12 @@ on:
     branches:
       - master
       - 'feature/*'
-  workflow_dispatch:
-    inputs:
-      deploy:
-        description: 'Trigger deploy to production'
-        required: true
-        default: 'false'
+  # workflow_dispatch:
+  #   inputs:
+  #     deploy:
+  #       description: 'Trigger deploy to production'
+  #       required: true
+  #       default: 'false'
 
 jobs:
   # Parallel Job: Build and Test on Self-Hosted EC2 (with Tomcat installed)
